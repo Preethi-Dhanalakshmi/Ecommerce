@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head-phone">
+        <nav class="navbar">
+            <h1><img src="New folder/images/newfolder/f.s.jpg" alt="logo" id="logo"></h1>
+            <ul class="nav-links">
+                <li class="men"><a href="mens.html">MEN</a></li>
+                <li class="women"><a href="ethnicwear.html">WOMEN</a></li>
+                <li class="kid"><a href="kids.html">KIDS</a></li>
+                <li class="home"><a href="decor.html">HOME & LIVING</a></li>
+                <li class="beauty"><a href="makeup.html">BEAUTY</a></li>
+            </ul>
+            <ul class="nav-icons">
+                <li><a href="wishlist.html">
+                        <i class="fa-regular fa-heart"></i>
+                        Wishlist
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="open-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Bag
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Add to bag -->
+        <div id="add-to-bag" class="add-bag">
+            <div class="side-nav">
+                <i class="fa-solid fa-arrow-left" id="close-btn"></i>
+                <h3>Bag</h3>
+                <p><a href="wishlist.html">View Wishlist</a></p>
+            </div>
+            <div class="cart-page">
+                <img src="images/image.jpg" alt="image" width="150px" height="150px">
+                <h2>Your Shopping Bag is Empty</h2>
+                <p>This feels too light! Go on, add all your favourites</p>
+                <button class="shopping-btn">Start Shopping</button>
+            </div>
+            <div id="product-list">
+                <ul id="product-item"></ul>
+            </div>
+
+            <div id="total">
+                <span id="grand-total">$0.00
+                </span>
+                <p>Grand Total</p>
+                <button id="payment-btn" class="payment-btn">Proceed to Pay</button>
+            </div>
+        </div>
+
+        <!-- HeadPhones -->
+        <div class="collection">
+            <div class="products" id="product">
+                <h3>Headphones and Bluetooth</h3>
+                <div class="items">
+                    <div class="dress">
+                        <img src="images/bluetooth/2.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">boAt</h4>
+                        <p class="product-name">Airdopes Wireless Earbuds</p>
+                        <h5 class="cost">Rs. 1999</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.4490</h6>
+                        <h6 style="color: red;" class="offer">(30% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/bluetooth/3.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Portronics</h4>
+                        <p class="product-name">Portable Bluetooth Speaker</p>
+                        <h5 class="cost">Rs. 2699</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.4499</h6>
+                        <h6 style="color: red;" class="offer">(50% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/bluetooth/4.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Portronics</h4>
+                        <p class="product-name">Pixel 3 10W Bluetooth Speaker</p>
+                        <h5 class="cost">Rs.3999</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.6999</h6>
+                        <h6 style="color: red;" class="offer">(40% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/bluetooth/5.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Trueview</h4>
+                        <p class="product-name">Bluetooth Speakert</p>
+                        <h5 class="cost">Rs. 1699</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.3499</h6>
+                        <h6 style="color: red;" class="offer">(40% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/bluetooth/6.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Glynzak</h4>
+                        <p class="product-name">Ear Headphones</p>
+                        <h5 class="cost">Rs. 988</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.2200</h6>
+                        <h6 style="color: red;" class="offer">(20% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/bluetooth/9.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">pTron</h4>
+                        <p class="product-name"> Wireless Neckband Earphonest</p>
+                        <h5 class="cost">Rs. 1799</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.2299</h6>
+                        <h6 style="color: red;" class="offer">(50% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/bluetooth/10.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Realme</h4>
+                        <p class="product-name">Earbuds - Black</p>
+                        <h5 class="cost">Rs. 2260</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.6679</h6>
+                        <h6 style="color: red;" class="offer">(60% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/bluetooth/11.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">JBL</h4>
+                        <p class="product-name">Ear Bluetooth Headset</p>
+                        <h5 class="cost">Rs. 5999</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.9999</h6>
+                        <h6 style="color: red;" class="offer">(40% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/bluetooth/14.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">HAMMER</h4>
+                        <p class="product-name">Muffs M3 Over Ear Headphones</p>
+                        <h5 class="cost">Rs. 1699</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.2999</h6>
+                        <h6 style="color: red;" class="offer">(50% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/bluetooth/15.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">boAt</h4>
+                        <p class="product-name">Rockerz Bluetooth Headset</p>
+                        <h5 class="cost">Rs. 1599</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.4799</h6>
+                        <h6 style="color: red;" class="offer">(60% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/bluetooth/16.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">NOISE</h4>
+                        <p class="product-name">White Truly Wireless Earbuds</p>
+                        <h5 class="cost">Rs. 1699</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.3999</h6>
+                        <h6 style="color: red;" class="offer">(45% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/bluetooth/17.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">pura</h4>
+                        <p class="product-name">Multi Connect On Ear Headset</p>
+                        <h5 class="cost">Rs. 3999</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.4999</h6>
+                        <h6 style="color: red;" class="offer">(20% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

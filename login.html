@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-page">
+        <form id="login">
+            <div id="log">
+                <h2>Create Account</h2>
+                <label for="name">Your Name</label>
+                <input type="text" id="fullname" placeholder="First and last name">
+
+                <div class="error-name"></div>
+
+                <div class="mobile-input">
+                    <label for="number">Mobile Number</label><br>
+                    <select name="extension" id="country-code">
+                        <option value="+91">IN +91</option>
+                        <option value="+1">US +1</option>
+                        <option value="+86">China +86</option>
+                        <option value="+41">Switzerland +41</option>
+                        <input type="tel" id="mobile-number" placeholder="Mobile number">
+
+                        <div class="error-note">
+                        </div>
+                    </select>
+                </div>
+                <label for="Password">Password</label>
+                <input type="password" id="password" placeholder="Atleast 6 Characters">
+
+                <div class="error-password">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p>Password must be at least 6 characters</p>
+                </div>
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Atleast 6 Characters">
+
+                <div class="error-confirm">
+                </div>
+
+                <button type="submit">Create account</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        let form = document.getElementById("login");
+        let fullName = document.getElementById("fullname");
+        let mobileNumber = document.getElementById("mobile-number");
+        let password = document.getElementById("password");
+        let confirmPassword = document.getElementById("confirm-password");
+
+        let errorName = document.querySelector(".error-name");
+        let errorNumber = document.querySelector(".error-note");
+        let errorPassword = document.querySelector(".error-password");
+        let errorConfirm = document.querySelector(".error-confirm");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Validation Rules
+            const minPasswordLength = 6;
+            const numLength = 10;
+
+            const user = fullName.value.trim();
+            const pass = password.value.trim();
+            const confirmPass = confirmPassword.value.trim();
+            const number = mobileNumber.value.trim();
+
+            // Clear previous error messages
+            errorName.textContent = "";
+            errorNumber.textContent = "";
+            errorPassword.textContent = "";
+            errorConfirm.textContent = "";
+
+            // Validate the input fields
+            let isValid = true;
+
+            if (user === "") {
+                errorName.textContent = "Please enter your name.";
+                isValid = false;
+            }
+
+            if (number === "" || number.length < numLength || !/^\d+$/.test(number)) {
+                errorNumber.textContent = "Please enter a valid mobile number.";
+                isValid = false;
+            }
+
+            if (pass === "") {
+                errorPassword.textContent = "Please enter a password.";
+                isValid = false;
+            } else if (pass.length < minPasswordLength) {
+                errorPassword.textContent = "Password must be at least 6 characters long.";
+                isValid = false;
+            }
+
+            if (confirmPass === "") {
+                errorConfirm.textContent = "Please confirm your password.";
+                isValid = false;
+            } else if (pass !== confirmPass) {
+                errorConfirm.textContent = "Passwords do not match.";
+                isValid = false;
+            }
+
+            // If everything is valid, save to localStorage
+            if (isValid) {
+                localStorage.setItem("username", user);
+                localStorage.setItem("usernumber", number);
+                localStorage.setItem("userpassword", pass);
+                alert("Your account was created successfully! You can now sign in.");
+                window.location.href = "New folder/signin.html"; // Redirect to login page
+            }
+        });
+    </script>
+</body>
+
+</html>

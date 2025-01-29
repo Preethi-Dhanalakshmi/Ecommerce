@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lounge wear</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="lounge-wear">
+        <!-- header -->
+
+        <nav class="navbar">
+            <h1><img src="New folder/images/newfolder/f.s.jpg" alt="logo" id="logo"></h1>
+            <ul class="nav-links">
+                <li class="men"><a href="mens.html">MEN</a></li>
+                <li class="women"><a href="ethnicwear.html">WOMEN</a></li>
+                <li class="kid"><a href="kids.html">KIDS</a></li>
+                <li class="home"><a href="decor.html">HOME & LIVING</a></li>
+                <li class="beauty"><a href="makeup.html">BEAUTY</a></li>
+            </ul>
+            <ul class="nav-icons">
+                <li><a href="wishlist.html">
+                        <i class="fa-regular fa-heart"></i>
+                        Wishlist
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="open-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Bag
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Add to bag -->
+        <div id="add-to-bag" class="add-bag">
+            <div class="side-nav">
+                <i class="fa-solid fa-arrow-left" id="close-btn"></i>
+                <h3>Bag</h3>
+                <p><a href="wishlist.html">View Wishlist</a></p>
+            </div>
+            <div class="cart-page">
+                <img src="images/image.jpg" alt="image" width="150px" height="150px">
+                <h2>Your Shopping Bag is Empty</h2>
+                <p>This feels too light! Go on, add all your favourites</p>
+                <button class="shopping-btn">Start Shopping</button>
+            </div>
+            <div id="product-list">
+                <ul id="product-item"></ul>
+            </div>
+
+            <div id="total">
+                <span id="grand-total">$0.00
+                </span>
+                <p>Grand Total</p>
+                <button id="payment-btn" class="payment-btn">Proceed to Pay</button>
+            </div>
+        </div>
+
+        <!-- sports wear page -->
+
+        <div class="collection">
+            <div class="products" id="product">
+                <h3>Lounge Wear</h3>
+                <div class="items">
+                    <div class="dress">
+                        <img src="images/lounge/1.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Claura</h4>
+                        <p class="product-name">Shorts and Top Loungewear Set</p>
+                        <h5 class="cost">Rs. 779</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.1299</h6>
+                        <h6 style="color: red;" class="offer">(40% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/lounge/2.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Nap Chief</h4>
+                        <p class="product-name"> Night Suit</p>
+                        <h5 class="cost">Rs. 880</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.1490</h6>
+                        <h6 style="color: red;" class="offer">(40% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/lounge/3.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">DAMENSCH</h4>
+                        <p class="product-name">Men Stretch Lounge Set</p>
+                        <h5 class="cost">Rs. 1897</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.2290</h6>
+                        <h6 style="color: red;" class="offer">(35% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/lounge/4.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">SANSKRUTIHOMES</h4>
+                        <p class="product-name"> Men Night suit</p>
+                        <h5 class="cost">Rs. 999</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.2599</h6>
+                        <h6 style="color: red;" class="offer">(40% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/lounge/5.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">ETC</h4>
+                        <p class="product-name">Printed Cotton Night suit</p>
+                        <h5 class="cost">Rs. 699</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.3349</h6>
+                        <h6 style="color: red;" class="offer">(80% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/lounge/6.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">beebelle</h4>
+                        <p class="product-name">Shirt with Pyjam</p>
+                        <h5 class="cost">Rs. 1249</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.2498</h6>
+                        <h6 style="color: red;" class="offer">(50% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/lounge/7.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">beebelle</h4>
+                        <p class="product-name">Shirt with Pyjam</p>
+                        <h5 class="cost">Rs. 999</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.2499</h6>
+                        <h6 style="color: red;" class="offer">(60% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/lounge/8.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Masha</h4>
+                        <p class="product-name">Satin Night suit</p>
+                        <h5 class="cost">Rs. 1199</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.2499</h6>
+                        <h6 style="color: red;" class="offer">(52% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    
+                    <div class="dress">
+                        <img src="images/lounge/10.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">beebelle</h4>
+                        <p class="product-name">Shirt with Pyjam</p>
+                        <h5 class="cost">Rs. 1120</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.1899</h6>
+                        <h6 style="color: red;" class="offer">(41% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/lounge/11.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Lil Tomatoes</h4>
+                        <p class="product-name">Round Neck T-shirt With pants</p>
+                        <h5 class="cost">Rs. 918</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.1799</h6>
+                        <h6 style="color: red;" class="offer">(60% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 10px;
+            margin-top: 0px;
+            padding: 20px;
+        }
+
+        .wishlist-page {
+            text-align: center;
+            margin: 100px auto;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        #btn {
+            padding: 15px;
+            width: 20%;
+            background-color: rgb(241, 108, 153);
+            border: none;
+            border-radius: 5px;
+            font-size: large;
+            font-weight: lighter;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            background-color: rgb(247, 69, 129);
+        }
+
+        #wishlist-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            column-gap: 5px;
+        }
+
+        #wishlist-list li {
+            margin-top: 10px;
+            text-align: center;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 20%;
+            padding: 10px;
+        }
+
+        #wishlist-list li.cost {
+            font-size: 15px;
+        }
+
+        .delete {
+            font-size: 13px;
+            background-color: transparent;
+            border: none;
+            padding: 10px;
+            color: gray;
+            cursor: pointer;
+        }
+
+        .delete:hover {
+            background-color: rgb(232, 226, 226);
+        }
+
+        .cart {
+            background-color: rgb(238, 123, 142);
+            border: none;
+            width: 70%;
+            padding: 10px;
+            font-size: 15px;
+            margin-left: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            column-gap: 10px;
+        }
+
+        .cart:hover {
+            background-color: rgb(231, 74, 100);
+        }
+
+        .offer-cost {
+            text-decoration: line-through;
+            font-size: small;
+            color: gray;
+            margin-left: 10px;
+        }
+
+        .offer {
+            color: red;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>My Wishlist</h2>
+    <div class="wishlist-page">
+        <img src="images/wishlist.png" alt="img" width="200px" height="200px">
+        <p id="wishlist-status">Your Wishlist is empty</p>
+        <button id="btn">Start Shopping</button>
+    </div>
+    <div class="list-item">
+        <ul id="wishlist-list"></ul>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Handle the "Start Shopping" button
+            const shopbtn = document.getElementById("btn");
+            shopbtn.addEventListener('click', function () {
+                window.location.href ="C:/Users/user/OneDrive/Desktop/github/ecommerce/index.html";
+            });
+
+            // Display wishlist items if available
+            const wishlistPage = document.querySelector(".wishlist-page");
+            const wishlistList = document.getElementById("wishlist-list");
+            // const wishlistStatus = document.getElementById("wishlist-status");
+
+            // Check if any products are in localStorage
+            const wishlistItems = JSON.parse(localStorage.getItem("wishlistItems")) || [];
+
+            function updateWishlistStatus() {
+                if (wishlistItems.length === 0) {
+                    wishlistPage.style.display = "block";
+                }
+            }
+
+            if (wishlistItems.length > 0) {
+                wishlistPage.style.display = "none"; // Hide the "No items" message
+
+                // Loop through the wishlist items and display them
+                wishlistItems.forEach((item, index) => {
+                    let li = document.createElement("li");
+                    li.innerHTML = `
+        <img src="${item.image}" alt="${item.productName}" style="width: 200px; height: 200px; margin-top: 20px;"><br>
+        <span class="product-name" style="font-weight: bold">${item.productName}</span><br>
+        <span class="product-cost" style="font-weight: bold">${item.cost || 'N/A'}</span>
+        <span class="offer-cost">${item.offerCost || 'N/A'}</span><br>
+        <span class="offer">${item.offer || 'No Offer'}</span><hr>
+        <span>
+            <button class='delete'><i class='fa-solid fa-trash-can' style="font-variant :normal"> Delete</i></button>
+        </span>
+    `;
+                    wishlistList.appendChild(li);
+
+                    // Add the delete event handler
+                    const deleteButton = li.querySelector(".delete");
+                    deleteButton.addEventListener("click", function () {
+                        // Remove item from the wishlist array
+                        wishlistItems.splice(index, 1);
+                        localStorage.setItem("wishlistItems", JSON.stringify(wishlistItems));
+
+                        // Remove the item from the displayed list
+                        li.remove();
+
+                        // Update wishlist status
+                        updateWishlistStatus();
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

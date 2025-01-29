@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="watches">
+        <nav class="navbar">
+            <h1><img src="New folder/images/newfolder/f.s.jpg" alt="logo" id="logo"></h1>
+            <ul class="nav-links">
+                <li class="men"><a href="mens.html">MEN</a></li>
+                <li class="women"><a href="ethnicwear.html">WOMEN</a></li>
+                <li class="kid"><a href="kids.html">KIDS</a></li>
+                <li class="home"><a href="decor.html">HOME & LIVING</a></li>
+                <li class="beauty"><a href="makeup.html">BEAUTY</a></li>
+            </ul>
+            <ul class="nav-icons">
+                <li><a href="wishlist.html">
+                        <i class="fa-regular fa-heart"></i>
+                        Wishlist
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="open-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Bag
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <!-- Add to bag -->
+        <div id="add-to-bag" class="add-bag">
+            <div class="side-nav">
+                <i class="fa-solid fa-arrow-left" id="close-btn"></i>
+                <h3>Bag</h3>
+                <p><a href="wishlist.html">View Wishlist</a></p>
+            </div>
+            <div class="cart-page">
+                <img src="images/image.jpg" alt="image" width="150px" height="150px">
+                <h2>Your Shopping Bag is Empty</h2>
+                <p>This feels too light! Go on, add all your favourites</p>
+                <button class="shopping-btn">Start Shopping</button>
+            </div>
+            <div id="product-list">
+                <ul id="product-item"></ul>
+            </div>
+
+            <div id="total">
+                <span id="grand-total">$0.00
+                </span>
+                <p>Grand Total</p>
+                <button id="payment-btn" class="payment-btn">Proceed to Pay</button>
+            </div>
+        </div>
+
+        <!-- watches -->
+        <div class="collection">
+            <div class="products" id="product">
+                <h3>Watches</h3>
+                <div class="items">
+
+                    <div class="dress">
+                        <img src="images/watches/2.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Roadster</h4>
+                        <p class="product-name">Men Dial Analog Watch</p>
+                        <h5 class="cost">Rs. 2500</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.4599</h6>
+                        <h6 style="color: red;" class="offer">(60% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+
+                    <div class="dress">
+                        <img src="images/watches/4.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">DressBerry</h4>
+                        <p class="product-name">Women Analogue Watch</p>
+                        <h5 class="cost">Rs. 1379</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.4599</h6>
+                        <h6 style="color: red;" class="offer">(70% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/watches/5.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">JOKER & WITCH</h4>
+                        <p class="product-name">Women Bracelet Stack Watch</p>
+                        <h5 class="cost">Rs. 1595</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.7598</h6>
+                        <h6 style="color: red;" class="offer">(79% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+
+                    <div class="dress">
+                        <img src="images/watches/10.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">JOKER & WITCH</h4>
+                        <p class="product-name">Pack of 3 watch</p>
+                        <h5 class="cost">Rs. 1400</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.2999</h6>
+                        <h6 style="color: red;" class="offer">(48% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+
+                    <div class="dress">
+                        <img src="images/watches/9.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">GIORDANO</h4>
+                        <p class="product-name">Women Analogue Watch</p>
+                        <h5 class="cost">Rs. 3399</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.7390</h6>
+                        <h6 style="color: red;" class="offer">(54% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/watches/7.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">pebble</h4>
+                        <p class="product-name">Premium Metal Smart Watch</p>
+                        <h5 class="cost">Rs. 2999</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.7999</h6>
+                        <h6 style="color: red;" class="offer">(30% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/watches/11.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">JOKER & WITCH</h4>
+                        <p class="product-name">Black Star Couple Watches </p>
+                        <h5 class="cost">Rs. 1671</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.7598</h6>
+                        <h6 style="color: red;" class="offer">(78% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/watches/12.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">French Connection</h4>
+                        <p class="product-name">Women Watch Gift Set</p>
+                        <h5 class="cost">Rs. 3475</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.6950</h6>
+                        <h6 style="color: red;" class="offer">(50% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+
+                    <div class="dress">
+                        <img src="images/watches/14.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">GUESS</h4>
+                        <p class="product-name">Men Black Analogue Watch</p>
+                        <h5 class="cost">Rs. 8697</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.14995</h6>
+                        <h6 style="color: red;" class="offer">(42% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/watches/15.avif" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">RAGA</h4>
+                        <p class="product-name">Women Watch </p>
+                        <h5 class="cost">Rs. 4079</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.6397</h6>
+                        <h6 style="color: red;" class="offer">(32% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+
+                    <div class="dress">
+                        <img src="images/watches/17.avif" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">DressBerry</h4>
+                        <p class="product-name">Leather Straps Analogue Watch</p>
+                        <h5 class="cost">Rs. 1649</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.2499</h6>
+                        <h6 style="color: red;" class="offer">(47% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/watches/20.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">RAGA</h4>
+                        <p class="product-name">Women Gold Watch</p>
+                        <h5 class="cost">Rs. 3500</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.7999</h6>
+                        <h6 style="color: red;" class="offer">(43% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

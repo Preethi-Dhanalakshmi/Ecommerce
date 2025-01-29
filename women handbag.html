@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handbags</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="handbag">
+        <nav class="navbar">
+            <h1><img src="New folder/images/newfolder/f.s.jpg" alt="logo" id="logo"></h1>
+            <ul class="nav-links">
+                <li class="men"><a href="mens.html">MEN</a></li>
+                <li class="women"><a href="ethnicwear.html">WOMEN</a></li>
+                <li class="kid"><a href="kids.html">KIDS</a></li>
+                <li class="home"><a href="decor.html">HOME & LIVING</a></li>
+                <li class="beauty"><a href="makeup.html">BEAUTY</a></li>
+            </ul>
+            <ul class="nav-icons">
+                <li><a href="wishlist.html">
+                        <i class="fa-regular fa-heart"></i>
+                        Wishlist
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="open-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Bag
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Add to bag -->
+        <div id="add-to-bag" class="add-bag">
+            <div class="side-nav">
+                <i class="fa-solid fa-arrow-left" id="close-btn"></i>
+                <h3>Bag</h3>
+                <p><a href="wishlist.html">View Wishlist</a></p>
+            </div>
+            <div class="cart-page">
+                <img src="images/image.jpg" alt="image" width="150px" height="150px">
+                <h2>Your Shopping Bag is Empty</h2>
+                <p>This feels too light! Go on, add all your favourites</p>
+                <button class="shopping-btn">Start Shopping</button>
+            </div>
+            <div id="product-list">
+                <ul id="product-item"></ul>
+            </div>
+
+            <div id="total">
+                <span id="grand-total">$0.00
+                </span>
+                <p>Grand Total</p>
+                <button id="payment-btn" class="payment-btn">Proceed to Pay</button>
+            </div>
+        </div>
+
+
+        <!-- Handbags -->
+        <div class="collection">
+            <div class="products" id="product">
+                <h3>Handbags</h3>
+                <div class="items">
+                    
+                    <div class="dress">
+                        <img src="images/handbag/2.avif" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">FLYING BERRY</h4>
+                        <p class="product-name"> Solid Shoulder Bag</p>
+                        <h5 class="cost">Rs.  3077</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.10772</h6>
+                        <h6 style="color: red;" class="offer">(75% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/handbag/3.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">ZOUK</h4>
+                        <p class="product-name">Blue Structured Sling Bag</p>
+                        <h5 class="cost">Rs. 920</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.3298</h6>
+                        <h6 style="color: red;" class="offer">(70% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/handbag/4.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">FLYING BERRY</h4>
+                        <p class="product-name">White Solid Handbags Combo</p>
+                        <h5 class="cost">Rs. 3574</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.6499</h6>
+                        <h6 style="color: red;" class="offer">(45% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/handbag/5.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">GENWAYNE</h4>
+                        <p class="product-name">Leather Handbags</p>
+                        <h5 class="cost">Rs. 3077</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.10990</h6>
+                        <h6 style="color: red;" class="offer">(72% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/handbag/7.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Eske</h4>
+                        <p class="product-name">Textured Swagger Hobo Bag</p>
+                        <h5 class="cost">Rs. 1134</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.1890</h6>
+                        <h6 style="color: red;" class="offer">(40% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/handbag/8.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Lavie</h4>
+                        <p class="product-name">Shoulder Bag</p>
+                        <h5 class="cost">Rs. 1748</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.4495</h6>
+                        <h6 style="color: red;" class="offer">(65% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    
+                    <div class="dress">
+                        <img src="images/handbag/10.avif" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Lino Perros</h4>
+                        <p class="product-name">Off-White Solid Sling Bag</p>
+                        <h5 class="cost">Rs. 1172</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.2495</h6>
+                        <h6 style="color: red;" class="offer">(53% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/handbag/11.avif" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">OsaiZ</h4>
+                        <p class="product-name">Oversized Shoulder Bag</p>
+                        <h5 class="cost">Rs. 1620</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.3290</h6>
+                        <h6 style="color: red;" class="offer">(70% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/handbag/12.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Fastrack</h4>
+                        <p class="product-name"> Blue Solid Sling Bag</p>
+                        <h5 class="cost">Rs. 944</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.2099</h6>
+                        <h6 style="color: red;" class="offer">(55% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    
+                    <div class="dress">
+                        <img src="images/handbag/14.webp" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Exotic</h4>
+                        <p class="product-name">Textured Structured Handheld Bag </p>
+                        <h5 class="cost">Rs. 949</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.2499</h6>
+                        <h6 style="color: red;" class="offer">(62% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/handbag/15.avif" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">Baggit</h4>
+                        <p class="product-name">Tan Brown Structured Sling Bag</p>
+                        <h5 class="cost">Rs.1431</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.4090</h6>
+                        <h6 style="color: red;" class="offer">(65% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                    <div class="dress">
+                        <img src="images/handbag/16.jpg" alt="img" width="250px" height="300px" class="image">
+                        <h4 class="brand">WOMEN MARKS</h4>
+                        <p class="product-name">Structured Handheld Bag</p>
+                        <h5 class="cost">Rs. 1598</h5>
+                        <h6 class="offer-cost" style="text-decoration: line-through;">Rs.2999</h6>
+                        <h6 style="color: red;" class="offer">(47% OFF)</h6>
+                        <div class="buttons">
+                            <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                            <button class="cart">Add to Bag</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Decor</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1><img src="New folder/images/newfolder/f.s.jpg" alt="logo" id="logo"></h1>
+        <ul class="nav-links">
+            <li class="men"><a href="mens.html">MEN</a></li>
+            <li class="women"><a href="ethnicwear.html">WOMEN</a></li>
+            <li class="kid"><a href="kids.html">KIDS</a></li>
+            <li class="home"><a href="decor.html">HOME & LIVING</a></li>
+            <li class="beauty"><a href="makeup.html">BEAUTY</a></li>
+        </ul>
+        <ul class="nav-icons">
+            <li><a href="wishlist.html">
+                    <i class="fa-regular fa-heart"></i>
+                    Wishlist
+                </a>
+            </li>
+            <li>
+                <a href="#" id="open-btn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    Bag
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+        <!-- Add to bag -->
+    <div id="add-to-bag" class="add-bag">
+        <div class="side-nav">
+            <i class="fa-solid fa-arrow-left" id="close-btn"></i>
+            <h3>Bag</h3>
+            <p><a href="wishlist.html">View Wishlist</a></p>
+        </div>
+        <div class="cart-page">
+            <img src="images/image.jpg" alt="image" width="150px" height="150px">
+            <h2>Your Shopping Bag is Empty</h2>
+            <p>This feels too light! Go on, add all your favourites</p>
+            <button class="shopping-btn">Start Shopping</button>
+        </div>
+        <div id="product-list">
+            <ul id="product-item"></ul>
+        </div>
+
+        <div id="total">
+            <span id="grand-total">$0.00
+            </span>
+            <p>Grand Total</p>
+            <button id="payment-btn" class="payment-btn">Proceed to Pay</button>
+        </div>
+    </div>
+
+    <!-- Handbags -->
+    <div class="collection">
+        <div class="products" id="product">
+            <h3>Home Decor</h3>
+            <div class="items">
+
+                <div class="dress">
+                    <img src="images/home decor/2.webp" alt="img" width="250px" height="300px" class="image">
+                    <h4 class="brand">TIED RIBBONS</h4>
+                    <p class="product-name">Artificial Flower With Pot</p>
+                    <h5 class="cost">Rs. 2260</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.6679</h6>
+                    <h6 style="color: red;" class="offer">(60% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+
+                <div class="dress">
+                    <img src="images/home decor/4.jfif" alt="img" width="250px" height="300px" class="image">
+                    <h4 class="brand">CraftVatika</h4>
+                    <p class="product-name">Gold-Toned Ganpati Showpiece</p>
+                    <h5 class="cost">Rs. 6859</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.14912</h6>
+                    <h6 style="color: red;" class="offer">(54% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="dress">
+                    <img src="images/home decor/5.jpg" alt="img" width="250px" height="300px" class="image">
+                    <h4 class="brand">Exotic India</h4>
+                    <p class="product-name">Swing </p>
+                    <h5 class="cost">Rs. 3999</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.5999</h6>
+                    <h6 style="color: red;" class="offer">(40% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="dress">
+                    <img src="images/home decor/6.webp" alt="img" width="250px" height="300px" class="image">
+                    <h4 class="brand">Ekhasa</h4>
+                    <p class="product-name">Tiny Krishna Flute Hand Statue </p>
+                    <h5 class="cost">Rs. 837</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.1999</h6>
+                    <h6 style="color: red;" class="offer">(30% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="dress">
+                    <img src="images/home decor/7.webp" alt="img" width="250px" height="300px" class="image">
+                    <h4 class="brand">THE ARTMENT</h4>
+                    <p class="product-name">Diamond Glass Wall Mirror Tiles</p>
+                    <h5 class="cost">Rs.  699</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.999</h6>
+                    <h6 style="color: red;" class="offer">(50% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+
+                <div class="dress">
+                    <img src="images/home decor/9.webp" alt="img" width="250px" height="300px" class="image">
+                    <h4 class="brand">ExclusiveLane</h4>
+                    <p class="product-name"> Chandelier With Hanging Lamp</p>
+                    <h5 class="cost">Rs. 1924</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.5499</h6>
+                    <h6 style="color: red;" class="offer">(65% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="dress">
+                    <img src="images/home decor/11.webp" alt="img" width="250px" height="300px" class="image">
+                    <h4 class="brand">Kuber Industries</h4>
+                    <p class="product-name">Wall Hanging Bells With Ring</p>
+                    <h5 class="cost">Rs. 548</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.899</h6>
+                    <h6 style="color: red;" class="offer">(39% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="dress">
+                    <img src="images/home decor/14.webp" alt="img" width="250px" height="300px" class=image>
+                    <h4 class="brand">SAF</h4>
+                    <p class="product-name"> 3-Layered Printed Wall Hanging</p>
+                    <h5 class="cost">Rs. 400</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.1999</h6>
+                    <h6 style="color: red;" class="offer">(80% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="dress">
+                    <img src="images/home decor/15.jpg" alt="img" width="250px" height="300px" class="image">
+                    <h4 class="brand">Homesake</h4>
+                    <p class="product-name"> Wooden 3 Tier Wall Hanging</p>
+                    <h5 class="cost">Rs. 806</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.1550</h6>
+                    <h6 style="color: red;" class="offer">(48% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+
+                <div class="dress">
+                    <img src="images/home decor/16.jpg" alt="img" width="250px" height="300px" class="image">
+                    <h4 class="brand">Homesake</h4>
+                    <p class="product-name">Beige Wooden Wall Hanging</p>
+                    <h5 class="cost">Rs. 960</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.1700</h6>
+                    <h6 style="color: red;" class="offer">(55% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="dress">
+                    <img src="images/home decor/18.jpg" alt="img" width="250px" height="300px" class="image">
+                    <h4 class="brand">Cortina</h4>
+                    <p class="product-name">Dining Table Chair</p>
+                    <h5 class="cost">Rs. 6999</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.10000</h6>
+                    <h6 style="color: red;" class="offer">(40% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="dress">
+                    <img src="images/home decor/19.jpg" alt="img" width="250px" height="300px" class="image">
+                    <h4 class="brand">SAF</h4>
+                    <p class="product-name"> 4-Layered Printed Wall Hanging</p>
+                    <h5 class="cost">Rs. 399</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.1995</h6>
+                    <h6 style="color: red;" class="offer">(80% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+
+                <div class="dress">
+                    <img src="images/home decor/24.webp" alt="img" width="250px" height="300px" class="image">
+                    <h4 class="brand">Pure Home and Living</h4>
+                    <p class="product-name">Toned Printed Jasmine Garland Scented Glass Jar Candle</p>
+                    <h5 class="cost">Rs. 930</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.1349</h6>
+                    <h6 style="color: red;" class="offer">(31% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="dress">
+                    <img src="images/home decor/23.webp" alt="img" width="250px" height="300px" class="image">
+                    <h4 class="brand">GIVA</h4>
+                    <p class="product-name">Sandalwood Aromatic Jar Candle</p>
+                    <h5 class="cost">Rs. 179</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.399</h6>
+                    <h6 style="color: red;" class="offer">(55% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+                <div class="dress">
+                    <img src="images/home decor/25.webp" alt="img" width="250px" height="300px" class="image">
+                    <h4 class="brand">URBAN SPACE</h4>
+                    <p class="product-name"> Pure Cotton Bedsheet With 2 Pillow Covers</p>
+                    <h5 class="cost">Rs. 1399</h5>
+                    <h6 class="offer-cost" style="text-decoration: line-through;">Rs.3299</h6>
+                    <h6 style="color: red;" class="offer">(40% OFF)</h6>
+                    <div class="buttons">
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
+                        <button class="cart">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
