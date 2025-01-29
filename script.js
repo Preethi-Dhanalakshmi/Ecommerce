@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     shoppingBtn.addEventListener("click", function () {
-        window.location.href ="C:/Users/user/OneDrive/Desktop/github/ecommerce/index.html";
+        window.location.href ="index.html";
     });
 
     let cartBag = document.querySelectorAll(".cart");
@@ -184,14 +184,14 @@ let popularSearch = document.querySelector(".popular-search");
 let closeicon = document.getElementById("close");
 
 let products = [
-    { name: "women ethnic wear", link: "New folder/ethnicwear.html" },
-    { name: "makeup", link: "New folder/makeup.html" },
-    { name: "watch", link: "New folder/watch.html" },
-    { name: "bag", link: "New folder/bags.html" },
-    { name: "Jewelleries", link: "New folder/jewl.html" },
-    { name: "shoes", link: "New folder/footwear.html" },
-    { name: "Mens", link: "New folder/mencasual.html" },
-    { name: "home decor", link: "New folder/decor.html" },
+    { name: "women ethnic wear", link: "women ethnicwear.html" },
+    { name: "makeup", link: "makeup.html" },
+    { name: "watch", link: "watch.html" },
+    { name: "bag", link: "travelbag.html" },
+    { name: "Jewelleries", link: "jewl.html" },
+    { name: "shoes", link: "m&w footwear.html" },
+    { name: "Mens", link: "mencasual.html" },
+    { name: "home decor", link: "things decor.html" },
     // Add more products here
 ];
 
@@ -277,7 +277,7 @@ searchInput.addEventListener("input", function () {
 let payment = document.getElementById("payment-btn");
 
 payment.addEventListener("click", function () {
-    window.location.href = "New folder/payment.html";
+    window.location.href = "payment.html";
 });
 
 
