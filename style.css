@@ -1116,7 +1116,7 @@ input {
     margin-left: -25px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 700px) {
     .bag-item {
         flex-direction: column;
         align-items: flex-start;
@@ -1136,5 +1136,11 @@ input {
     }
     .slide-container {
         width: 100%;
+    }
+    .nav-links {
+        display: none;
+    }
+    .searchbar {
+        display: none;
     }
 }
