@@ -105,7 +105,7 @@
 
 .search {
     position: fixed;
-    left: 50.3%;
+    left: 50.8%;
     top: 12.5%;
     width: 29.3%;
     background-color: rgb(255, 255, 255);
@@ -198,6 +198,18 @@
     margin-left: 165px;
     font-size: smaller;
     margin-top: -10px;
+}
+
+.cart-count {
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 3.5px;
+    padding-right: 3.5px;
+    border-radius: 50px;
+    background-color: palevioletred;
+    position: absolute;
+    transform: translate(6px, -8px);
+    font-size: small;
 }
 
 .cart-page {

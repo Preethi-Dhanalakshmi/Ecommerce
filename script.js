@@ -1,10 +1,10 @@
-
-// add to bag
+// add bag
 document.addEventListener("DOMContentLoaded", function () {
     let openButton = document.getElementById("open-btn");
     let closeButton = document.getElementById("close-btn");
     let addBag = document.getElementById("add-to-bag");
     let shoppingBtn = document.querySelector(".shopping-btn");
+    let cartCount = document.getElementById("cart-count");  // Cart item count element
 
     openButton.addEventListener("click", function () {
         addBag.classList.add("open");
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     shoppingBtn.addEventListener("click", function () {
-        window.location.href ="index.html";
+        window.location.href = "index.html";
     });
 
     let cartBag = document.querySelectorAll(".cart");
@@ -52,6 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
             // Update the product list in the bag and the grand total
             updateBag();
             updateTotal();
+
+            // Update cart item count
+            updateCartCount();
         });
     });
 
@@ -88,6 +91,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 localStorage.setItem("bagItems", JSON.stringify(bagItems));
                 updateBag();
                 updateTotal();
+
+                // Update cart item count after deleting
+                updateCartCount();
             });
         });
     }
@@ -113,10 +119,17 @@ document.addEventListener("DOMContentLoaded", function () {
         grandTotal.textContent = `Rs. ${total.toFixed(2)}`;
     }
 
+    // Update the cart count (number of items in the bag)
+    function updateCartCount() {
+        cartCount.textContent = bagItems.length; // Update the cart item count
+    }
+
     // Initial load
     updateBag();
     updateTotal();
+    updateCartCount();  // Update the cart count when the page is loaded
 });
+
 
 
 
@@ -209,7 +222,7 @@ document.addEventListener("click", function (event) {
     }
 });
 
-// Show close icon when the user types
+// // Show close icon when the user types
 searchInput.addEventListener("keyup", function () {
     if (searchInput.value.trim() !== "") {
         closeicon.style.display = "block";  // Show the close icon when there's text in the input
@@ -227,6 +240,13 @@ closeicon.addEventListener("click", function () {
 
 // Fetch search suggestions based on user input
 searchInput.addEventListener("input", function () {
+
+    if (searchInput.value.trim() !== "") {
+        closeicon.style.display = "block";  // Show the close icon when there's text
+    } else {
+        closeicon.style.display = "none";  // Hide the close icon when input is empty
+    }
+
     let query = searchInput.value;
     if (query && query.trim() !== "") {
         query = query.toLowerCase();  // Make sure it's lowercase
