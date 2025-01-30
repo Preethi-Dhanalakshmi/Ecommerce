@@ -1132,6 +1132,9 @@ input {
     }
 
     #add-to-bag {
-        width: 100%;
+        width: 100px;
+    }
+    .slide-container {
+        width: 100px;
     }
 }
