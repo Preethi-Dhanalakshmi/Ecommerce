@@ -1137,10 +1137,4 @@ input {
     .slide-container {
         width: 100%;
     }
-    .nav-links {
-        display: none;
-    }
-    .searchbar {
-        display: none;
-    }
 }
