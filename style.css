@@ -1174,4 +1174,7 @@ input {
         justify-content: left;
         column-gap: 50px;
     }
+    body {
+        width: 350px;
+    }
 }
