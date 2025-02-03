@@ -1163,15 +1163,15 @@ input {
 
     .menu-toggle {
         display: block;
-        /* margin-left: 100px; */
+        margin-left: 100px;
     }
 
-    /* .searchbar {
+    .searchbar {
         width: 150px;
-    } */
+    } 
 
-    /* .navbar {
+    .navbar { 
         justify-content: left;
         column-gap: 50px;
-    } */
+    }
 }
