@@ -1175,6 +1175,6 @@ input {
         column-gap: 50px;
     }
     body {
-        width: 350px;
+        max-width: 350px;
     }
 }
