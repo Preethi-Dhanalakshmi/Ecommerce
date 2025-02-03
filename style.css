@@ -1142,7 +1142,7 @@ input {
     text-decoration: underline;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
     .bag-item {
         flex-direction: column;
         align-items: flex-start;
