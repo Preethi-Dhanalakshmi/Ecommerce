@@ -1174,7 +1174,4 @@ input {
         justify-content: left;
         column-gap: 50px;
     }
-    * {
-        max-width: 350px;
-    }
 }
