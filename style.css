@@ -1172,7 +1172,6 @@ input {
 
     .navbar {
         justify-content: left;
-        max-width: 320px;
         column-gap: 50px;
     }
 }
