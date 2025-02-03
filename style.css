@@ -1116,7 +1116,33 @@ input {
     margin-left: -25px;
 }
 
-@media screen and (max-width: 700px) {
+.menu-toggle {
+    display: none;
+}
+
+.side-navbar {
+    background-color: #101010;
+    color: white;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    transition: 2s;
+}
+.side-navbar-items {
+    margin-bottom: 30px;
+}
+.side-navbar-items a {
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-items a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 350px) {
     .bag-item {
         flex-direction: column;
         align-items: flex-start;
@@ -1131,10 +1157,21 @@ input {
         margin-top: 10px;
     }
 
-    #add-to-bag {
-        width: 100%;
+    .nav-links {
+        display: none;
     }
-    .slide-container {
-        width: 100%;
+
+    .menu-toggle {
+        display: block;
+        margin-left: 100px;
+    }
+
+    .searchbar {
+        width: 150px;
+    }
+
+    .navbar {
+        justify-content: left;
+        column-gap: 50px;
     }
 }
