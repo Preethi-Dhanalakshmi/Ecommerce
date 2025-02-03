@@ -1142,7 +1142,7 @@ input {
     text-decoration: underline;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
     .bag-item {
         flex-direction: column;
         align-items: flex-start;
@@ -1172,7 +1172,6 @@ input {
 
     .navbar {
         justify-content: left;
-        max-width: 320px;
         column-gap: 50px;
     }
 }
