@@ -1218,4 +1218,10 @@ input {
     .side-nav p {
         margin-left: -70px;
     }
+    .mens-collection {
+        flex-wrap: wrap;
+    }
+    .grand-brand {
+        flex-wrap: wrap;
+    }
 }
