@@ -1566,11 +1566,33 @@ input {
     #offer {
         display: none;
     }
-    #proceed-to-payment {
-        width: 90%;
-        margin-left: -80%;
-    }
-    #shipping {
+    #payment-to-proceed {
         width: 50%;
+        margin-left: -15%;
+        box-shadow: none;
+    }
+    /* #payment-to-proceed input{
+        width: 110%;
+    }
+    #payment-to-proceed textarea{
+        width: 100%;
+    } */
+    #payment-to-proceed hr{
+        display: none;
+    }
+    #ship-btn button {
+        margin-left: -0%;
+        width: 120%;
+        margin-top: 20px;
+    }
+    #details {
+        margin-left: -50px;
+        margin-top: -50px;
+    }
+    #details p {
+        display: none;
+    }
+    #contact-address {
+        margin-left: -50px;
     }
 }
