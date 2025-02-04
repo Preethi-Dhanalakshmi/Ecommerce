@@ -1213,17 +1213,9 @@ input {
         display: none;
     }
 
-    .mens-collection {
-        overflow: auto;
-    }
-
     .mens img {
         width: 150px;
         height: 150px;
-    }
-
-    .grand-brand {
-        overflow: auto;
     }
 
     .grand img {
