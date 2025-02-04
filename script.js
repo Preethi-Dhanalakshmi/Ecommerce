@@ -1,12 +1,10 @@
 var sidenavbar = document.querySelector(".side-navbar")
 
-function shownavbar()
-{
-    sidenavbar.style.left="0"
+function shownavbar() {
+    sidenavbar.style.left = "0"
 }
-function closenavbar()
-{
-    sidenavbar.style.left="-60%"
+function closenavbar() {
+    sidenavbar.style.left = "-60%"
 }
 
 // add bag
@@ -18,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let cartCount = document.getElementById("cart-count");  // Cart item count element
 
     openButton.addEventListener("click", function () {
-        addBag.display = "block";
+        addBag.style.display = "block";
     });
 
     closeButton.addEventListener("click", function () {
-        addBag.display = "none";
+        addBag.style.display = "none";  // Hide the element instead of removing it
     });
-
+    
     shoppingBtn.addEventListener("click", function () {
         window.location.href = "index.html";
     });
@@ -86,9 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 <span class="product-list">
                     <img src="${item.image}" alt="${item.name}" width="100px" height="100px">
                     <p id="name">${item.name}</p>
-                    <button class='delete'><i class='fa-solid fa-trash-can'></i></button>
+                    
                 </span><br><hr>
                 <span class="product-bottom">
+                    <button class='delete'><i class='fa-solid fa-trash-can'></i></button>
                     <p id="price">${item.price}</p>
                     <p id="offercost">${item.offercost}</p>
                     <p id="offer">${item.offer}</p>
