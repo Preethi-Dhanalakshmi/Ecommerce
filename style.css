@@ -446,6 +446,7 @@
 .mens-collection {
     display: flex;
     margin-top: 70px;
+    overflow: auto;
 }
 
 .mens a {
@@ -480,6 +481,8 @@
     display: flex;
     margin-top: 80px;
     cursor: pointer;
+    overflow: auto;
+    scrollbar-color: blue;
 }
 
 .grand p {
