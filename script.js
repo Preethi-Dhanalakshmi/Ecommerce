@@ -13,16 +13,16 @@ function closenavbar()
 document.addEventListener("DOMContentLoaded", function () {
     let openButton = document.getElementById("open-btn");
     let closeButton = document.getElementById("close-btn");
-    let addBag = document.getElementById("add-to-bag");
+    let addBag = document.querySelector(".add-bag");
     let shoppingBtn = document.querySelector(".shopping-btn");
     let cartCount = document.getElementById("cart-count");  // Cart item count element
 
     openButton.addEventListener("click", function () {
-        addBag.classList.add("open");
+        addBag.display = "block";
     });
 
     closeButton.addEventListener("click", function () {
-        addBag.classList.remove("open");
+        addBag.display = "none";
     });
 
     shoppingBtn.addEventListener("click", function () {

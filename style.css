@@ -167,13 +167,14 @@
     top: 0;
     right: -100%;
     height: 100%;
-    width: 31%;
+    width: 35%;
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     overflow: auto;
+    display: none;
 }
 
 .side-nav {
@@ -1123,11 +1124,11 @@ input {
 .side-navbar {
     background-color: #101010;
     color: white;
-    width: 15%;
+    width: 50%;
     height: 100%;
     position: fixed;
     top: 0;
-    left: -60%;
+    left: -62%;
     padding: 20px;
     transition: 2s;
 }
@@ -1208,20 +1209,115 @@ input {
     .wish-list {
         display: none;
     }
-    
-    .add-bag {
-        width: 90%;
-    }
-    .side-nav {
-        width: 23%;
-    }
-    .side-nav p {
-        margin-left: -70px;
-    }
+
     .mens-collection {
-        flex-wrap: wrap;
+        overflow: auto;
     }
+
+    .mens img {
+        width: 150px;
+        height: 150px;
+    }
+
     .grand-brand {
-        flex-wrap: wrap;
+        overflow: auto;
+    }
+
+    .grand img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #online-shopping {
+        display: none;
+    }
+
+    #policy {
+        display: none;
+    }
+
+    .section1 {
+        display: inline;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #original {
+        margin: 10px;
+    }
+
+    #social h5 {
+        margin-top: 30px;
+    }
+    
+    .address {
+        display: none;
+    }
+
+    .phone-no {
+        margin-left: -100px;
+        text-align: center;
+    }
+
+    .phone-no p {
+        display: flexbox;
+        margin-left: -15px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .category {
+        box-shadow: none;
+    }
+
+    .shop-category {
+        display: flex;
+    }
+
+    .shop-category img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .container {
+        width: 120px;
+    }
+    .container h4 {
+        font-size: 11px;
+    }
+    .container p {
+        font-size: 12px;
+    }
+    .container h5 {
+        font-size: 11px;
+    }
+    .dress img {
+        width: 150px;
+        height: 200px;
+    }
+    .dress {
+        box-shadow: none;
+        width: 150px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .buttons {
+        box-shadow: none;
+    }
+    .wishlist {
+        width: 40px;
+    }
+    .cart {
+        width: 100px;
+    }
+    .brand {
+        font-size: 15px;
+    }
+    .product-name {
+        font-size: 12px;
+        width: 100px;
+    }
+    .cost {
+        font-size: 14px;
     }
 }
