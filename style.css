@@ -1581,7 +1581,7 @@ input {
         display: none;
     }
     #ship-btn button {
-        margin-left: -0%;
+        margin-left: 0%;
         width: 120%;
         margin-top: 20px;
     }
