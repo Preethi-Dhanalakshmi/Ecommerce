@@ -24,6 +24,25 @@
         <!-- header -->
 
         <nav class="navbar">
+
+            <div class="menu-toggle" onclick="shownavbar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="side-navbar">
+                <p style="text-align: right;" onclick="closenavbar()">
+                    <i class="fa-solid fa-xmark"></i>
+                </p>
+                <div class="side-navbar-link">
+                    <p class="side-navbar-items"><a href="mens.html">Men</a></p>
+                    <p class="side-navbar-items"><a href="women ethnicwear.html">Women</a></p>
+                    <p class="side-navbar-items"><a href="kids.html">Kids</a></p>
+                    <p class="side-navbar-items"><a href="things decor.html">Home & Living</a></p>
+                    <p class="side-navbar-items"><a href="makeup.html">Beauty</a></p>
+                </div>
+            </div>
+
+
             <h1><img src="other folder/newfolder/f.s.jpg" alt="logo" id="logo"></h1>
             <ul class="nav-links">
                 <li class="men"><a href="mens.html">MEN</a></li>
@@ -46,6 +65,32 @@
                 </li>
             </ul>
         </nav>
+
+        <!-- Add to bag -->
+        <div id="add-to-bag" class="add-bag">
+            <div class="side-nav">
+                <i class="fa-solid fa-arrow-left" id="close-btn"></i>
+                <h3>Bag</h3>
+                <p><a href="wishlist.html">View Wishlist</a></p>
+            </div>
+            <div class="cart-page">
+                <img src="other folder/image.jpg" alt="image" width="150px" height="150px">
+                <h2>Your Shopping Bag is Empty</h2>
+                <p>This feels too light! Go on, add all your favourites</p>
+                <button class="shopping-btn">Start Shopping</button>
+            </div>
+            <div id="product-list">
+                <ul id="product-item"></ul>
+            </div>
+
+            <div id="total">
+                <span id="grand-total">$0.00
+                </span>
+                <p>Grand Total</p>
+                <button id="payment-btn" class="payment-btn">Proceed to Pay</button>
+            </div>
+        </div>
+
 
 
         <!-- sports wear page -->

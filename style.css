@@ -341,7 +341,7 @@
 
 #payment-btn {
     display: flex;
-    width: 45%;
+    width: 40%;
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -1132,11 +1132,11 @@ input {
 .side-navbar {
     background-color: #101010;
     color: white;
-    width: 50%;
+    width: 48%;
     height: 100%;
     position: fixed;
     top: 0;
-    left: -62%;
+    left: -65%;
     padding: 20px;
     transition: 2s;
 }
@@ -1558,10 +1558,18 @@ input {
         background-color: white;
         width: 80%;
         border-top: 1px solid rgb(222, 218, 218);
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+        width: 80%;
+    }
+    #grand-total {
+        font-size: 15px;
     }
     #payment-btn {
         font-size: small;
-        width: 30%;
+        width: 37%;
+        margin-left: 160px;
     }
     #offer {
         display: none;
@@ -1571,28 +1579,59 @@ input {
         margin-left: -15%;
         box-shadow: none;
     }
-    /* #payment-to-proceed input{
-        width: 110%;
+    #payment-to-proceed input{
+        width: 75%;
     }
     #payment-to-proceed textarea{
-        width: 100%;
-    } */
+        width: 70%;
+    }
     #payment-to-proceed hr{
         display: none;
     }
     #ship-btn button {
-        margin-left: 0%;
-        width: 120%;
+        margin-left: -30px;
+        width: 150%;
         margin-top: 20px;
+        text-align: center;
+        font-size: 13px;
+        padding: 7px;
     }
     #details {
         margin-left: -50px;
         margin-top: -50px;
+        font-size: small;
+    }
+    #details input {
+        padding: 7px;
     }
     #details p {
         display: none;
     }
     #contact-address {
         margin-left: -50px;
+        font-size: small;
+    }
+    #contact-address input {
+        padding: 7px;
+
+    }
+    #contact-address textarea {
+        padding: 20px;
+    }
+    .mens p {
+        font-size: small;
+    }
+    .mens h5 {
+        font-size: small;
+    }
+    .grand p {
+        font-size: small;
+    }
+    .grand h5 {
+        font-size: small;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-around;
     }
 }

@@ -120,8 +120,16 @@
             #btn {
                 width: 50%;
             }
-        }
 
+            #wishlist-list li {
+                box-shadow: none;
+                width: 50%;
+                font-size: small;
+            }
+            .list-item {
+                margin-left: -15%;
+            }
+        }
     </style>
 </head>
 
@@ -141,7 +149,7 @@
             // Handle the "Start Shopping" button
             const shopbtn = document.getElementById("btn");
             shopbtn.addEventListener('click', function () {
-                window.location.href ="index.html";
+                window.location.href = "index.html";
             });
 
             // Display wishlist items if available
@@ -165,7 +173,7 @@
                 wishlistItems.forEach((item, index) => {
                     let li = document.createElement("li");
                     li.innerHTML = `
-        <img src="${item.image}" alt="${item.productName}" style="width: 200px; height: 200px; margin-top: 20px;"><br>
+        <img src="${item.image}" alt="${item.productName}" class="wishlist-image" style="width: 200px; height: 200px; margin-top: 20px;"><br>
         <span class="product-name" style="font-weight: bold">${item.productName}</span><br>
         <span class="product-cost" style="font-weight: bold">${item.cost || 'N/A'}</span>
         <span class="offer-cost">${item.offerCost || 'N/A'}</span><br>
