@@ -1359,7 +1359,7 @@ input {
     }
 
     .searchbar {
-        width: 140px;
+        width: 95px;
     }
 
     .searchbar i {
@@ -1368,8 +1368,8 @@ input {
 
     .navbar {
         display: flex;
-        justify-content: left;
-        column-gap: 5px;
+        justify-content: space-around;
+
     }
 
     .sign-in {
@@ -1630,8 +1630,14 @@ input {
     .grand h5 {
         font-size: small;
     }
-    .navbar {
-        display: flex;
-        justify-content: space-around;
+    #logo {
+        width: 55px;
+        height: 55px;
+    }
+    #open-btn i{
+        margin-right: 15px;
+    }
+    #open-btn {
+        margin-right: 15px;
     }
 }
